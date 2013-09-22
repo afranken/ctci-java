@@ -10,6 +10,10 @@ import java.util.List;
  */
 public class CharacterHelper {
 
+  private CharacterHelper(){
+    //private constructor for helper classes
+  }
+
   /**
    * Implement first part of the question.
    *
@@ -19,7 +23,7 @@ public class CharacterHelper {
    *
    * @return true if characters are unique
    */
-  protected boolean containsOnlyUniqueCharacters(String testString) {
+  public static boolean containsOnlyUniqueCharacters(String testString) {
     boolean unique = false;
 
     List<Character> encounteredChars = new ArrayList<>();
@@ -48,7 +52,7 @@ public class CharacterHelper {
    *
    * @return true if characters are unique
    */
-  protected boolean containsOnlyUniqueCharactersWithoutDatastructure(String testString) {
+  public static boolean containsOnlyUniqueCharactersWithoutDatastructure(String testString) {
     boolean unique = true;
 
     for(int i = 0; i < testString.length(); i++) {

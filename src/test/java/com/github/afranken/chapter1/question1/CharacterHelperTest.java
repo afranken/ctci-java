@@ -1,8 +1,9 @@
 package com.github.afranken.chapter1.question1;
 
-import com.github.afranken.chapter1.question1.CharacterHelper;
 import org.junit.Test;
 
+import static com.github.afranken.chapter1.question1.CharacterHelper.containsOnlyUniqueCharacters;
+import static com.github.afranken.chapter1.question1.CharacterHelper.containsOnlyUniqueCharactersWithoutDatastructure;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -11,26 +12,24 @@ import static org.junit.Assert.assertTrue;
  */
 public class CharacterHelperTest {
 
-  private static CharacterHelper testling = new CharacterHelper();
-
   @Test
   public void testOnlyUniqueCharacters(){
 
     String unique = "uniq";
-    assertTrue("unique string",testling.containsOnlyUniqueCharacters(unique));
+    assertTrue("unique string", containsOnlyUniqueCharacters(unique));
 
     String nonUnique = "aaabbb";
-    assertFalse("non-unique string",testling.containsOnlyUniqueCharacters(nonUnique));
+    assertFalse("non-unique string", containsOnlyUniqueCharacters(nonUnique));
   }
 
   @Test
   public void testOnlyUniqueCharactersWithoutDatastructure(){
 
     String unique = "uniq";
-    assertTrue("unique string",testling.containsOnlyUniqueCharactersWithoutDatastructure(unique));
+    assertTrue("unique string", containsOnlyUniqueCharactersWithoutDatastructure(unique));
 
     String nonUnique = "aaabbb";
-    assertFalse("non-unique string",testling.containsOnlyUniqueCharactersWithoutDatastructure(nonUnique));
+    assertFalse("non-unique string", containsOnlyUniqueCharactersWithoutDatastructure(nonUnique));
   }
 
 }
