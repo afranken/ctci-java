@@ -15,8 +15,8 @@ Given two strings, write a method to decide if one is a permutation of the other
 
 1.4
 ---
-Write a method tp replace all spaces in a string with '%20'. Yu may assume that the string has sufficient space at the end of the string to hold
-the additional charaters, and that you are given the "true" length of the string. (Note: if implementing in Java, please use a character array so that
+Write a method to replace all spaces in a string with '%20'. You may assume that the string has sufficient space at the end of the string to hold
+the additional charcaters, and that you are given the "true" length of the string. (Note: if implementing in Java, please use a character array so that
 you can perform this operation in place.)
 
 Example:
